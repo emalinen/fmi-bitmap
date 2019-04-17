@@ -19,9 +19,6 @@ setup(
         'pathlib',
         'pillow',
         'pytz',
-        'fmi==0.50.1',
-    ],
-    dependency_links=[
-        'git+https://github.com/kipe/fmi.git#egg=fmi-0.50.1',
+        'fmi_weather',
     ],
 )
