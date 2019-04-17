@@ -19,9 +19,9 @@ setup(
         'pathlib',
         'pillow',
         'pytz',
-        'fmi==0.20',
+        'fmi',
     ],
     dependency_links=[
-        'git+https://github.com/kipe/fmi.git#egg=fmi-0.20',
+        'git+https://github.com/kipe/fmi.git#egg=fmi',
     ],
 )
