@@ -22,6 +22,6 @@ setup(
         'fmi',
     ],
     dependency_links=[
-        'git+https://github.com/kipe/fmi.git#egg=fmi',
+        'git+https://github.com/kipe/fmi.git#egg=fmi-0.50.1',
     ],
 )
