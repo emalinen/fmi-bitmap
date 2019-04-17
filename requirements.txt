@@ -1,0 +1,4 @@
+pathlib
+pillow
+pytz
+fmi_weather
