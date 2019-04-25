@@ -1,6 +1,7 @@
 from fmi import FMI
 from bmp_builder.handler import BMPHandler
 from pathlib import PurePath
+import os
 
 from pytz import timezone
 import datetime
@@ -17,7 +18,7 @@ class ForecastBitmap():
         self.location = location
         self.fmi = FMI(self.api_key, place=self.location)
 
-        self.symbol_folder = PurePath('symbols')
+        self.symbol_folder = PurePath(os.path.dirname(__file__) + '/symbols')
 
         self.hours = 6
         self.step = 2
