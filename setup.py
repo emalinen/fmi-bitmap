@@ -3,7 +3,7 @@ from distutils.core import setup
 
 setup(
     name='BMP builder',
-    version='0.0.3',
+    version='0.0.4',
     description='BMP builder can build weather from FMI data',
     author='Esa Malinen',
     author_email='esa.malinen2@gmail.com',
