@@ -1,12 +1,12 @@
 from PIL import Image, ImageDraw, ImageFont
 from pathlib import PurePath
-
+import os
 
 class BMPHandler():
     def __init__(self, width_px, height_px):
         self.image_handler = Image.new('L', (width_px, height_px), color='white')
         self.image = ImageDraw.Draw(self.image_handler)
-        font_path = str(PurePath('fonts', 'FreeSansBold.ttf'))
+        font_path = str(PurePath(os.path.dirname(__file__) + '/fonts', 'FreeSansBold.ttf'))
         self.font = ImageFont.truetype(font_path, 20)
 
     def add_subimage(self, path_to_bmp, x, y):
