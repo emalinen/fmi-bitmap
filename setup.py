@@ -3,7 +3,7 @@ from distutils.core import setup
 
 setup(
     name='BMP builder',
-    version='0.0.6',
+    version='0.0.7',
     description='BMP builder generates black and white bitmaps for e-paper displays',
     author='Esa Malinen',
     author_email='esa.malinen2@gmail.com',
