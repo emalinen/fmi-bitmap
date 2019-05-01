@@ -4,7 +4,7 @@ import os
 
 class BMPHandler():
     def __init__(self, width_px, height_px):
-        self.image_handler = Image.new('L', (width_px, height_px), color='white')
+        self.image_handler = Image.new('1', (width_px, height_px), color='white')
         self.image = ImageDraw.Draw(self.image_handler)
         font_path = str(PurePath(os.path.dirname(__file__) + '/fonts', 'FreeSansBold.ttf'))
         print(font_path)
