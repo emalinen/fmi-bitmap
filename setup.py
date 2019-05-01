@@ -3,16 +3,17 @@ from distutils.core import setup
 
 setup(
     name='BMP builder',
-    version='0.0.5',
-    description='BMP builder can build weather from FMI data',
+    version='0.0.6',
+    description='BMP builder generates black and white bitmaps for e-paper displays',
     author='Esa Malinen',
     author_email='esa.malinen2@gmail.com',
-    url='https://bitbucket.org/emalinen/python-fmi-image-builder/',
-    packages=['bmp_builder', 'bmp_builder.symbols'],
+    url='https://github.com/emalinen/fmi-bitmap',
+    packages=['bmp_builder', 'bmp_builder.symbols', 'bmp_builder.fonts'],
     package_data={
         'bmp_builder': [
             'symbols/*.svg',
             'symbols/*.bmp',
+            'fonts/*.ttf',
         ],
     },
     install_requires=[
