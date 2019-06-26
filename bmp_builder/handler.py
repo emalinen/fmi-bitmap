@@ -7,7 +7,6 @@ class BMPHandler():
         self.image_handler = Image.new('1', (width_px, height_px), color='white')
         self.image = ImageDraw.Draw(self.image_handler)
         font_path = str(PurePath(os.path.dirname(__file__) + '/fonts', 'FreeSansBold.ttf'))
-        print(font_path)
         self.font = ImageFont.truetype(font_path, 20)
 
     def add_subimage(self, path_to_bmp, x, y):
